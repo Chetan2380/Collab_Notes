@@ -88,8 +88,11 @@ function Navbar() {
           )}
         </div>
         <ul className="auth-links">
-        {!state?.user ? (<li onClick={() => navigate("/login")}>Login</li> ) : (
-          <li onClick={handleLogout}>Logout</li>)}
+        {!state?.user ? (
+    <li onClick={() => navigate("/login")}>Login</li>
+  ) : (
+    <li onClick={handleLogout}>Logout</li>
+  )}
         </ul>
         
       </div>
