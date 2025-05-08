@@ -1,0 +1,83 @@
+.create-note {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-note-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.create-note-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-note-heading {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.note-label {
+  align-self: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.note-input,
+.note-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.note-textarea {
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.note-submit {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-submit:hover {
+  background-color: #357abd;
+}
+
+.note-errors {
+  width: 100%;
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  color: #cc0000;
+  padding: 0.75rem;
+  border-radius: 8px;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}

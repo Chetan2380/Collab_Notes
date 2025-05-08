@@ -1,0 +1,168 @@
+.my-notes-container {
+  max-width: 100%;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.user-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-letter {
+  width: 60px;
+  height: 60px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.user-email {
+  color: #777;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.message {
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.loader-container {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #222;
+}
+
+.note-card p {
+  margin: 0.5rem 0 1rem 0;
+  color: #444;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.share-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.share-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.share-btn:hover {
+  background-color: #357abd;
+}
+
+/* Edit Form Styling */
+.edit-form {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+}
+
+.edit-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.edit-form button:last-child {
+  background-color: #6c757d;
+}
+
+.edit-form button:hover {
+  opacity: 0.9;
+}
