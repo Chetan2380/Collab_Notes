@@ -15,7 +15,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://collaborative-notes-snowy.vercel.app",
+    origin: "https://collab-notes-ecru.vercel.app",
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(morgan("combined"));
 app.use(
   cors({
-    origin: "https://collaborative-notes-snowy.vercel.app",
+    origin: "https://collab-notes-ecru.vercel.app",
     credentials: true,
   })
 );
