@@ -141,7 +141,7 @@ const SharedWithMe = () => {
                       {new Date(note.updatedAt).toLocaleString()}
                     </p>
                     {hasWritePermission(note) && (
-                      <button onClick={() => startEditing(note)}>Edit</button>
+                      <button onClick={() => startEditing(note)} className="edit-button">Edit</button>
                     )}
                   </>
                 )}
