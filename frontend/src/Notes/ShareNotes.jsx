@@ -3,6 +3,7 @@ import { io } from "socket.io-client";
 import Api from "../axiosconfig";
 import { AuthContext } from "../context/user.context";
 import Navbar from "../Navbar/Navbar";
+import "../Notes/SharedNotes.css"
 
 const socket = io("http://localhost:8000", {
   withCredentials: true,
