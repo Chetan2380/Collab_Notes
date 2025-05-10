@@ -56,11 +56,18 @@
   text-align: center;
 }
 
-.edit-button{
+.edit-button {
   padding: 8px 16px;
   font-size: 0.9rem;
+  background-color: #2196f3; /* Blue background */
+  color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.edit-button:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+}
+
