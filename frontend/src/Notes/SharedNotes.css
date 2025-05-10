@@ -32,7 +32,7 @@
   margin: 0.5rem 0;
 }
 
-.note-card button {
+/* .note-card button {
   margin-top: 1rem;
   padding: 0.6rem 1.5rem;
   background-color: #4caf50;
@@ -45,7 +45,7 @@
 
 .note-card button:hover {
   background-color: #388e3c;
-}
+} */
 
 .notification {
   background-color: #fff3cd;
@@ -65,6 +65,7 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  size: 50px;
 }
 
 .edit-button:hover {
