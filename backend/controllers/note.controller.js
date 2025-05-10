@@ -151,6 +151,11 @@ export const getSharedNotes = async (req, res) => {
 export const updateSharedNote = async (req, res) => {
   try {
     const { noteId, userId, title, content } = req.body;
+
+    if (!noteId || !userId) {
+      return res.status(400).json({ success: false, error: "Note ID and User ID are required." });
+    }
+
     const note = await Note.findById(noteId);
 
     if (!note) {
@@ -170,16 +175,6 @@ export const updateSharedNote = async (req, res) => {
     note.lastUpdated = new Date();
 
     await note.save();
-
-    const noteOwnerId = note.createdBy.toString();
-    const socketId = req.onlineUsers.get(noteOwnerId);
-    if (socketId) {
-      req.io.to(socketId).emit("noteUpdated", {
-        noteId: note._id,
-        updatedBy: userId,
-        title: note.title,
-      });
-    }
 
     res.json({ success: true, message: "Note updated successfully.", note });
   } catch (error) {
